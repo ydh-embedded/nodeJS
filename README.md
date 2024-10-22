@@ -6,7 +6,7 @@
  
  [ ] wir gehen auf die folgende WebSite
     
-    - [https://releases.jquery.com/](jQuery)
+    - [[Link to jQuery Website]](https://releases.jquery.com/)
 
  [ ] wir kopieren uns folgenden Text in den <head>
  
