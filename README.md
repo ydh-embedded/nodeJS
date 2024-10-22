@@ -8,8 +8,11 @@
     
     - [[Link to jQuery Website]](https://releases.jquery.com/)
 
- [ ] wir kopieren uns folgenden Text in den <head>
+ [ ] wir kopieren uns folgenden Text in den <head> um jQuery Bibliothek nutzen zu können.
  
  ```js
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
  ```
+ 
+ [ ] nodeJS brauchen wir um JavaScript Serverseitig auszuführen!
+ 
