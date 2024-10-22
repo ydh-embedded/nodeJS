@@ -36,5 +36,30 @@
       nvm --version
 ```
 
+#### JavaScript ausführen
+
+[ ] Wir führen  JS Server-seitig mit dem Befehl aus:
+
+```bs
+         [ydh@C01127 nodeJS]$ cd nodeJS/
+         [ydh@C01127 nodeJS]$ ls
+```
+
+```      app.js
+```
+
+
+```bs
+         [ydh@C01127 nodeJS]$ node app.js 
+```
+
+
+```
+         Server running on port 3000
+```
+
+
+
+
 
 
