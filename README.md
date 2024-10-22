@@ -59,6 +59,21 @@
 ```
 
 
+```html
+         http://localhost:3000
+```
+
+[ ] wir lassen uns in dem terminal den Response anzeigen
+
+```bs
+         curl http://localhost:3000
+```
+
+[ ] um den Server zu beenden verwenden wir:
+
+   [STRG] + [C] 
+
+
 
 
 
