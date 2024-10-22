@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <title>JavaScript Events</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f7e8; /* Cream background */
+            color: #333;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4caf50; /* Green heading */
+        }
+
+        /* Styling for the scrollable div */
+        #scrollDiv {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff; /* White background for contrast */
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the button */
+        #clickButton {
+            background-color: #4caf50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #clickButton:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Styling for the mouse area */
+        #mouseDiv {
+            width: 200px;
+            height: 100px;
+            background-color: #e8f5e9; /* Light green background */
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #4caf50; /* Green border */
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the input field */
+        #focusInput {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4caf50; /* Green border */
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        /* Styling for the select dropdown */
+        #changeSelect {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4caf50; /* Green border */
+            border-radius: 5px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript Events Example</h2>
+    
+    <!-- Scroll Event -->
+    <div id="scrollDiv">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    </div>
+    
+    <!-- Click Event -->
+    <button id="clickButton">Click Me!</button>
+    
+    <!-- Mouse Enter and Leave Events -->
+    <div id="mouseDiv" style="width: 200px; height: 100px; background-color: #f0f0f0; text-align: center; padding: 20px;">
+        Mouse Over Me!
+    </div>
+    
+    <!-- Focus Event -->
+    <input id="focusInput" type="text" placeholder="Focus on me...">
+    
+    <!-- Change Event -->
+    <select id="changeSelect">
+        <option value="">Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    
+    <script>
+        "use strict";
+        
+        // Scroll Event
+        document.getElementById("scrollDiv").addEventListener("scroll", function() {
+            console.log("You scrolled!");
+        });
+        
+        // Click Event
+        document.getElementById("clickButton").addEventListener("click", function() {
+            console.log("You clicked the button!");
+        });
+        
+        // Mouse Enter and Leave Events
+        document.getElementById("mouseDiv").addEventListener("mouseenter", function() {
+            console.log("You entered the mouse area!");
+            this.style.backgroundColor = "#ccc";
+        });
+
+        document.getElementById("mouseDiv").addEventListener("mouseleave", function() {
+            console.log("You left the mouse area!");
+            this.style.backgroundColor = "#f0f0f0";
+        });
+        
+        // Focus Event
+        document.getElementById("focusInput").addEventListener("focus", function() {
+            console.log("You focused on the input!");
+        });
+        
+        // Change Event
+        document.getElementById("changeSelect").addEventListener("change", function() {
+            console.log("You selected an option: " + this.value);
+        });
+    </script>
+</body>
+</html>
