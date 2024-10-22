@@ -18,3 +18,23 @@
 
  [ ] nodeJS benötigen wir um JavaScript Serverseitig auszuführen!
 
+#### Windows
+
+[ ] unter Windows gehen wir auf die WebSite und laden die gewünschte version herunter
+
+#### Linux (endevaour)
+
+[ ] wir geben folgende Befehle ein (mit dem Package-Manager yay)
+
+```bs
+      yay -S nvm
+      nvm --version
+```
+
+```bs
+      nvm install 23 
+      nvm --version
+```
+
+
+
